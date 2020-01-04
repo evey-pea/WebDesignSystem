@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Style Reference Guide</title>
+    <link rel="stylesheet"  href="css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Style Reference Guide</h1>
+    </header>
+    <article>
+        <div class="topic">
+                <h2>Purpose</h2>
+                <p>The purpose of this guide is to specify the colour scheme, fonts, layout and element styles to be used in creating site pages.</p>
+        
+                <p>Developers and designers use design systems in order to organize the look and feel of a website or web application. Design systems help to document the visual vocabulary and reusable components of a large website.</p>
+        
+                <p>As your websites grow larger and more complex, having a consistent set of styles will help them stay cohesive and enjoyable for users! It also helps as you start working with other developers, as you can have a consistent reference for how your website should be built.</p>
+        </div>
+        <!-- Create section for colour colourScheme -->
+        <div class="topic" id="colourScheme">
+            <h2>Colour Scheme</h2>
+            <p>The colour scheme employed by myself is "Mohito", inspired by the colours found within the famous beverage and a nod to my favourite Linux distribution: LMDE (Linux Mint Debian Edition). Yes, I know that there are no olives in a mohito, but run with me on this, okay?</p>
+            <p>Each tone has a corresponding contrasting element colour that is also found in the same scheme.</p>
+            <div style="overflow-x: auto">
+                <table>
+                    <theader>
+                        <tr>
+                            <th>Color</th>
+                            <th>Contrast</th>
+                            <th>CSS Class</th>
+                            <th>Hexadecimal</th>
+                            <th>RGB</th>
+                            <th>RGBa</th>
+                            <th>HSL</th>
+                            <th>HSLa</th>
+                        </tr>
+                        </theader>
+                    <tbody class="Mohito">
+                        <tr>
+                            <td>Mohito</td>
+                            <td>Olive</td>
+                            <td>.Mohito</td>
+                            <td>#F6FBF3</td>
+                            <td>rgb(246, 251, 243)</td>
+                            <td></td>
+                            <td>hsl(97, 50%, 97%)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody class="SoftLime">
+                        <tr>
+                            <td>Soft Lime</td>
+                            <td>Mint</td>
+                            <td>.SoftLime</td>
+                            <td>#A1D37E</td>
+                            <td>rgb(161, 211, 126)</td>
+                            <td></td>
+                            <td>hsl(95, 49%, 66%)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody class="Lime">
+                        <tr>
+                            <td>Lime</td>
+                            <td>Mint</td>
+                            <td>.Lime</td>
+                            <td>#6BAE3B</td>
+                            <td>rgb(107, 174, 59)</td>
+                            <td></td>
+                            <td>hsl(95, 49%, 46%)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody class="Mint">
+                        <tr>
+                            <td>Mint</td>
+                            <td>Soft Lime</td>
+                            <td>.Mint</td>
+                            <td>#3D6322</td>
+                            <td>rgb(61, 99, 34)</td>
+                            <td></td>
+                            <td>hsl(95, 49%, 26%)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>                 
+                    <tbody class="Olive">
+                        <tr>
+                            <td>Olive</td>
+                            <td>Mohito</td>
+                            <td>Olive</td>
+                            <td>#1D330C</td>
+                            <td>rgb(29, 33, 12)</td>
+                            <td></td>
+                            <td>hsl(71, 47%, 9%)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+        </div>
+
+        <!-- Create section for fonts to be used -->
+        <div class="topic" id="fontUsage">
+            <h2>Fonts</h2>
+            <p>In yet another nod to a linux distribution, the font used in the style sheet is <em>Ubuntu</em>. This distribution gave me a huge amount of experience early on when it was still Debian based. An added benefit is that the font is a true type font.</p>
+            <p>The font is available from <a href="https://https://fonts.google.com/?query=ubun&selection.family=Ubuntu"> Google Fonts</a> and can also be found in the <a href="file:///C:/Users/Evelyn/OneDrive/Projects/Codecademy/WebsiteDesignSystem/project/fonts/">/fonts</a> directory of this site. The font sizes utilised are listed in the table below</p>
+            <div style="overflow-x: auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Example</th>
+                            <th>Local Font Name</th>
+                            <th>Weight</th>
+                            <th>Font File</th><th>CSS Import Rule</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>This is an example...</td>
+                            <td>Ubuntu Regular</td>
+                            <td class="numberBox">400</td>
+                            <td><a href="/fonts/Ubuntu-Regular.ttf">Ubuntu-Regular.ttf</a></td>
+                            <td class="codeBox">@font-face {
+&emsp;font-family: 'Ubuntu';
+&emsp;font-style: normal;
+&emsp;font-weight: 400;
+&emsp;src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(/fonts/Ubuntu-Regular.ttf) format('woff2');
+&emsp;unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</td>
+                        </tr>
+                        <tr>
+                            <td><em>This is an example...</em></td>
+                            <td>Ubuntu Italic</td>
+                            <td class="numberBox">400</td>
+                            <td><a href="/fonts/Ubuntu-Italic.ttf">Ubuntu-Italic.ttf</a></td>
+                            <td class="codeBox">@font-face {
+&emsp;font-family: 'Ubuntu';
+&emsp;font-style: italic;
+&emsp;font-weight: 400;
+&emsp;src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(/fonts/Ubuntu-Italic.ttf) &emsp;format('woff2');
+&emsp;unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</td>   
+                        </tr>
+                        <tr>
+                            <td><strong>This is an example...</strong></td>
+                            <td>Ubuntu Bold</td>
+                            <td class="numberBox">700</td>
+                            <td><a href="/fonts/Ubuntu-Bold.ttf">Ubuntu-Bold.ttf</a></td>
+                            <td class="codeBox">@font-face {
+&emsp;font-family: 'Ubuntu';
+&emsp;font-style: normal;
+&emsp;font-weight: 700;
+&emsp;src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(/fonts/Ubuntu-Bold.ttf) format('woff2');
+&emsp;unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</td>   
+                        </tr>
+                        <tr>
+                            <td><strong><em>This is an example...</em></strong></td>
+                            <td>Ubuntu Bold Italic</td>
+                            <td class="numberBox">700</td>
+                            <td><a href="/fonts/Ubuntu-BoldItalic.ttf">BoldItalic.ttf</a></td>
+                            <td class="codeBox">@font-face {
+&emsp;font-family: 'Ubuntu';
+&emsp;font-style: italic;
+&emsp;font-weight: 700;
+&emsp;src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url(/fonts/Ubuntu-BoldItalic.ttf) format('woff2');
+&emsp;unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;  
+}</td>   
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <!--Create section for element implementation -->
+        <div class="topic" id="implementation">
+            <h2>Elements</h2>
+        </div>
+        <!-- Create section for layout -->
+        <div class="topic" id="layout">
+            <h2>Layout</h2>
+            
+        </div>
+    
+    </article>
+    <footer>
+        <p>Created as part of Codecademy Project <em>Build a Website Design System</em> by Evelyn Paplauskas</p>
+    </footer>
+</body>
+</html>
