@@ -99,7 +99,6 @@ body {
     background-color: #6BAE3B;
     color: #3D6322;
 }
-
 /* Header styling */
 
 header {
@@ -141,6 +140,8 @@ footer p {
 article {
     top: 150px;
     position: relative;
+    width: 80%;
+    margin: auto;
     padding: 25px;
     background-color: #F6FBF3;
     color: #1D330C;
@@ -178,15 +179,15 @@ td {
 .numberBox{
     text-align: right;
 }
+
+.article code {
+    text-align: left;
+    white-space: pre;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .codeBox {
     text-align: left;
     white-space: pre;
     font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/* Article: Font type section */
 
-/* Article: Layout section */
-
-/* Article: Implementation section */
-
-/* Footer */
